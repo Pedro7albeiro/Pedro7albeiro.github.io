@@ -1,0 +1,53 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI-GRAFICADOR CRASH</title>
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="2style.css">
+    <link rel="stylesheet" href="Agbalumo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        @keyframes neonGlow {
+            from {
+                text-shadow: 0 0 3px red;
+            }
+            to {
+                text-shadow: 0 0 10px red;
+            }
+        }
+    </style>
+
+<script src="plausible.js"></script>
+</head>
+<body>
+    <h1>MULTI-GRAFICADOR CRASH <span style="display:inline-block; padding: 3px 7px; border-radius: 5px; background-color: red; color: white; font-size: 0.6em; vertical-align: super; text-shadow: 0 0 3px red; animation: neonGlow 1s ease-in-out infinite alternate;">V 3.0</span></h1>
+
+    <div id="chart-container">
+        <svg id="chart"></svg>
+        <div id="mini-chart-container">
+            <svg id="mini-chart"></svg>
+        </div>
+    </div>
+    <div id="buttons">
+        <button data-value="-5" data-mini-value="-1">1.00 / 1,09</button>
+        <button data-value="-4" data-mini-value="-1">1.10 / 1.29</button>
+        <button data-value="-3" data-mini-value="-1">1.30 / 1.49</button>
+        <button data-value="-2" data-mini-value="-1">1.50 / 1.79</button>
+        <button data-value="-1" data-mini-value="-1">1.80 / 1.99</button>
+        <button data-value="1" data-mini-value="1">2.00 / 3.99</button>
+        <button data-value="2" data-mini-value="1">4.00 / 5.99</button>
+        <button data-value="3" data-mini-value="1">6.00 / 7,99</button>
+        <button data-value="4" data-mini-value="1">8.00 / 9,99</button>
+        <button data-value="5" data-mini-value="1">10+</button>
+        <button id="undo">Retroceder</button>
+        <button id="reset">Reiniciar</button>
+    </div>
+
+    <!-- Scripts locales -->
+    <script src="2d3.v7.min.js"></script>
+    <script src="2script.js"></script>
+    <script src="2mini-chart.js"></script>
+</body>
+</html>
